@@ -1,5 +1,6 @@
 def busqueda_binaria(lista:list) ->None:
 
+    
     elemento_a_buscar = int(input("Por favor ingresa el numero que deseas ubicar "))
     intermedio = int(len(lista) / 2)
     elemento_encontrado = False
@@ -25,6 +26,7 @@ def busqueda_binaria(lista:list) ->None:
 
 def insertion_sort(lista_numeros:list) ->None:
 
+    
     for posicion in range(1,len(lista_numeros)):
         while posicion >0:
 
@@ -40,6 +42,7 @@ def insertion_sort(lista_numeros:list) ->None:
 
 def bubble_sort(lista_numeros:list)->None:
 
+    
     for vuelta in range(len(lista_numeros)):
 
         for elemento_actual in range(len(lista_numeros)-1):
@@ -56,7 +59,7 @@ def selection_sort(lista_numeros:list) ->None:
         posicion = posicion_valor_minimo
         valor_minimo = lista_numeros[posicion_valor_minimo]
 
-        for posicion_actual in range(posicion_valor_minimo+1,len(lista_numeros)):#estudiar como funcionan los rangos
+        for posicion_actual in range(posicion_valor_minimo+1,len(lista_numeros))
             if lista_numeros[posicion_actual] < valor_minimo:
                 posicion = posicion_actual
                 valor_minimo = lista_numeros[posicion_actual]
